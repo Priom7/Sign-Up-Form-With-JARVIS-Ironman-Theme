@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARVIS Authentication System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="arc-reactor">
+            <div class="reactor-container">
+                <div class="core"></div>
+                <div class="circle-1"></div>
+                <div class="circle-2"></div>
+                <div class="circle-3"></div>
+                <div class="circle-4"></div>
+                <div class="circle-5"></div>
+                <div class="circle-6"></div>
+            </div>
+        </div>
+
+        <div class="login-container">
+            <div class="screens">
+                <div class="screen login-screen active">
+                    <div class="screen-header">
+                        <div class="screen-title">
+                            <h2>JARVIS AUTHENTICATION</h2>
+                            <div class="subtitle">SIGN IN</div>
+                        </div>
+                        <div class="scan-lines"></div>
+                    </div>
+                    
+                    <div class="form-container">
+                        <div class="form-group">
+                            <div class="form-label">USER ID</div>
+                            <div class="input-container">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="Enter your user ID">
+                                <div class="focus-line"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-label">PASSWORD</div>
+                            <div class="input-container">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Enter your password">
+                                <div class="focus-line"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="remember-me">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Remember login credentials
+                            </label>
+                            <a href="#" class="forgot-password">Forgot Password?</a>
+                        </div>
+                        
+                        <button class="login-btn">
+                            <span>AUTHENTICATE</span>
+                            <svg class="btn-hover-effect" width="160" height="50" viewBox="0 0 160 50">
+                                <polyline points="0,0 160,0 160,50 0,50 0,0"></polyline>
+                            </svg>
+                        </button>
+                        
+                        <div class="social-login">
+                            <div class="social-title">OR AUTHENTICATE WITH</div>
+                            <div class="social-icons">
+                                <button class="social-btn google">
+                                    <i class="fab fa-google"></i>
+                                </button>
+                                <button class="social-btn facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+                                <button class="social-btn twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                                <button class="social-btn github">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="register-prompt">
+                            <span>DON'T HAVE AN ACCOUNT?</span>
+                            <a href="#" class="register-link">REGISTER</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="screen register-screen">
+                    <div class="screen-header">
+                        <div class="screen-title">
+                            <h2>JARVIS AUTHENTICATION</h2>
+                            <div class="subtitle">REGISTER NEW USER</div>
+                        </div>
+                        <div class="scan-lines"></div>
+                    </div>
+                    
+                    <div class="form-container">
+                        <div class="form-group">
+                            <div class="form-label">FULL NAME</div>
+                            <div class="input-container">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="Enter your full name">
+                                <div class="focus-line"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-label">EMAIL</div>
+                            <div class="input-container">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" placeholder="Enter your email">
+                                <div class="focus-line"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-label">USER ID</div>
+                            <div class="input-container">
+                                <i class="fas fa-id-card"></i>
+                                <input type="text" placeholder="Create a user ID">
+                                <div class="focus-line"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-label">PASSWORD</div>
+                            <div class="input-container">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Create a password">
+                                <div class="focus-line"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-label">CONFIRM PASSWORD</div>
+                            <div class="input-container">
+                                <i class="fas fa-shield-alt"></i>
+                                <input type="password" placeholder="Confirm your password">
+                                <div class="focus-line"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="remember-me">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                I agree to the Terms and Conditions
+                            </label>
+                        </div>
+                        
+                        <button class="login-btn register-btn">
+                            <span>CREATE ACCOUNT</span>
+                            <svg class="btn-hover-effect" width="160" height="50" viewBox="0 0 160 50">
+                                <polyline points="0,0 160,0 160,50 0,50 0,0"></polyline>
+                            </svg>
+                        </button>
+                        
+                        <div class="login-prompt">
+                            <span>ALREADY HAVE AN ACCOUNT?</span>
+                            <a href="#" class="login-link">SIGN IN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hud-elements">
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner top-right"></div>
+            <div class="hud-corner bottom-left"></div>
+            <div class="hud-corner bottom-right"></div>
+            <div class="hud-scanline"></div>
+        </div>
+
+        <div class="particles"></div>
+    </div>
+
+    <div class="loading-screen">
+        <div class="loading-text">JARVIS SYSTEM INITIALIZING</div>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+        </div>
+        <div class="loading-percentage">0%</div>
+    </div>
+
+    <audio id="hover-sound" src="https://www.soundjay.com/buttons/sounds/button-3.mp3" preload="auto"></audio>
+    <audio id="click-sound" src="https://www.soundjay.com/buttons/sounds/button-20.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
